@@ -1,0 +1,27 @@
+MODEL:
+  #WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"  # Pre-trained weights for Faster R-CNN
+  MASK_ON: False  # We are not using masks, so set this to False
+  RESNETS:
+    DEPTH: 50  # Using ResNet-50 as the backbone
+  PROPOSAL_GENERATOR:
+    NAME: "RPN"  # Using Region Proposal Network for proposals (default for Faster R-CNN)
+
+DATASETS:
+  TRAIN: ("pothole_train",)  # Replace with your registered training dataset name
+  TEST: ("pothole_test",)    # Replace with your registered test/validation dataset name
+
+DATALOADER:
+  NUM_WORKERS: 4  # Number of data loading workers, set according to your hardware
+
+SOLVER:
+  IMS_PER_BATCH: 2  # Batch size per iteration
+  BASE_LR: 0.0001  # Learning rate
+  STEPS: (600, 1200) 
+  MAX_ITER: 800  # Maximum number of iterations (adjust as needed)
+  STEPS: (210000, 250000)  # When to decrease the learning rate
+  CHECKPOINT_PERIOD: 5000  # Save checkpoints every 5000 iterations
+
+TEST:
+  EVAL_PERIOD: 5000  # Evaluate every 5000 iterations during training
+
+OUTPUT_DIR: "./output"

@@ -1,0 +1,107 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "test_image_0.jpg",
+            "width": 640,
+            "height": 640
+        },
+        {
+            "id": 2,
+            "file_name": "test_image_1.jpg",
+            "width": 640,
+            "height": 640
+        },
+        {
+            "id": 3,
+            "file_name": "test_image_2.jpg",
+            "width": 640,
+            "height": 640
+        },
+        {
+            "id": 4,
+            "file_name": "test_image_3.jpg",
+            "width": 640,
+            "height": 640
+        },
+        {
+            "id": 5,
+            "file_name": "test_image_4.jpg",
+            "width": 640,
+            "height": 640
+        }
+    ],
+    "annotations": [
+        {
+            "id": 1,
+            "image_id": 1,
+            "category_id": 1,
+            "bbox": [
+                205.0,
+                225.0,
+                269.0090026855469,
+                227.1320037841797
+            ],
+            "area": 61100.55381595204,
+            "iscrowd": 0
+        },
+        {
+            "id": 2,
+            "image_id": 2,
+            "category_id": 1,
+            "bbox": [
+                174.0,
+                203.0,
+                167.41299438476562,
+                142.1529998779297
+            ],
+            "area": 23798.25937034143,
+            "iscrowd": 0
+        },
+        {
+            "id": 3,
+            "image_id": 3,
+            "category_id": 1,
+            "bbox": [
+                21.0,
+                226.0,
+                601.02099609375,
+                169.0989990234375
+            ],
+            "area": 101632.04883152246,
+            "iscrowd": 0
+        },
+        {
+            "id": 4,
+            "image_id": 4,
+            "category_id": 1,
+            "bbox": [
+                182.0,
+                169.0,
+                219.00799560546875,
+                274.1600036621094
+            ],
+            "area": 60043.23287722655,
+            "iscrowd": 0
+        },
+        {
+            "id": 5,
+            "image_id": 5,
+            "category_id": 1,
+            "bbox": [
+                226.0,
+                309.0,
+                264.385009765625,
+                86.39399719238281
+            ],
+            "area": 22841.27779139951,
+            "iscrowd": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "pothole"
+        }
+    ]
+}
